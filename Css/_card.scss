@@ -1,0 +1,151 @@
+.cards{
+ background: url(../img/wall2.jpg);
+ background-attachment: fixed;
+ height: 500px;
+background-size: cover;
+
+.blur{
+    background: rgba(129, 79, 13, 0.329);
+    height: 500px;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+ .cnt-crd{
+
+     max-width: 1200px;
+     margin: auto;
+     text-align: center;
+    padding-top: 70px;
+
+    p{
+        font-size: 40px;
+        font-family: roboto;
+        font-weight: bold;
+        color: white;
+    }
+
+     .card{
+        display: flex;
+        justify-content: center;
+     
+        .crds{
+        width: 250px;
+        height: 250px;
+        background: rgba(255, 255, 255, 0.568);
+        border-radius: 20px;
+        margin: 20px;
+        -webkit-backdrop-filter: blur(50px);
+        backdrop-filter: blur(50px);
+        transition: .3s all ease;
+
+        &:hover{
+            background: rgba(255, 255, 255, 0.815);
+            transform: scale(1.05);
+        }
+        img{
+            width: 150px;
+            padding-top: 15px;
+        }
+        p{
+            font-size: 20px;
+            font-weight: normal;
+            text-transform: uppercase;
+            color: black;
+            padding: 10px;
+        }
+        button{
+            width: 80px;
+            height: 25px;
+            border: none;
+            border-radius: 3px;
+            background: rgb(180, 180, 180);
+            font-family: roboto;
+            outline: none;
+            cursor: pointer;
+            transition: .3s ;
+            &:hover,&:focus{
+                background: #6C63FF;
+                color: white;
+            }
+        }
+     }
+    }
+ }
+
+}
+
+@media screen and (max-width:768px){
+    .cards{
+        background: url(../img/wall2.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        height: 1000px;
+        
+       .blur{
+           background: rgba(129, 79, 13, 0.329);
+           height: 1000px;
+           -webkit-backdrop-filter: blur(10px);
+           backdrop-filter: blur(10px);
+       }
+        .cnt-crd{
+           text-align: center;
+           padding-top: 70px;
+           
+       
+           p{
+               font-size: 40px;
+               font-family: roboto;
+               font-weight: bold;
+               color: white;
+           }
+       
+            .card{
+               display: block;
+               justify-content: center;
+               padding-left: 30%;
+               .crds{
+               width: 250px;
+               height: 250px;
+               background: rgba(255, 255, 255, 0.568);
+               border-radius: 20px;
+               margin: 20px;
+               -webkit-backdrop-filter: blur(50px);
+               backdrop-filter: blur(50px);
+               transition: .3s all ease;
+       
+               &:hover{
+                   background: rgba(255, 255, 255, 0.815);
+                   transform: scale(1.05);
+               }
+               img{
+                   width: 150px;
+                   padding-top: 15px;
+               }
+               p{
+                   font-size: 20px;
+                   font-weight: normal;
+                   text-transform: uppercase;
+                   color: black;
+                   padding: 10px;
+               }
+               button{
+                   width: 80px;
+                   height: 25px;
+                   border: none;
+                   border-radius: 3px;
+                   background: rgb(180, 180, 180);
+                   font-family: roboto;
+                   outline: none;
+                   cursor: pointer;
+                   transition: .3s ;
+                   &:hover,&:focus{
+                       background: #6C63FF;
+                       color: white;
+                   }
+               }
+            }
+           }
+        }
+       
+       }
+}

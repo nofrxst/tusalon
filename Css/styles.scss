@@ -1,0 +1,15 @@
+@import "header";
+@import "banner";
+@import "info";
+@import "contact";
+@import "card";
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
