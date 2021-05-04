@@ -1,0 +1,113 @@
+.servicios{
+    max-width: 1200px;
+    margin: auto;
+
+    .container-serv{
+        padding-top: 50px;
+        text-align: center;
+        padding-bottom: 50px;
+        h2{
+            font-family: roboto;
+            text-transform: uppercase;
+        }
+        .tarjetas{
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            .tarjeta{
+                border: 1px solid rgb(141, 141, 141);
+                width: 300px;
+                margin-top: 50px;
+                .images{
+                    overflow:hidden;
+                    img{
+                        transition: 1s;
+                    }
+                    img:hover{
+                        -webkit-transform:scale(1.3);transform:scale(1.3);
+                    }
+                }
+               
+                h2{
+                    padding-top: 10px;
+                    font-family: Roboto;
+                    font-size: 1.5rem;
+
+                }
+                p{
+                    margin-left: 8px;
+                    margin-right: 8px;
+                    text-align: justify;
+                }
+                button{
+                    border: none;
+                    background: rgb(81, 97, 243);
+                    color: white;
+                    padding: 5px 30px;
+                    margin-bottom: 5px;
+                    transition: 500ms;
+                    &:hover{
+                        background: rgb(68, 81, 141);
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:768px){
+    .servicios{
+        max-width: 1200px;
+        margin: auto;
+    
+        .container-serv{
+            padding-top: 50px;
+            text-align: center;
+            
+            .tarjetas{
+                display: block;
+                justify-content: center;
+                margin: 0 27%;
+                gap: 50px;
+                .tarjeta{
+                    border: 1px solid rgb(141, 141, 141);
+                    width: 300px;
+                    margin-top: 50px;
+                    .images{
+                        overflow:hidden;
+                        img{
+                            transition: 1s;
+                        }
+                        img:hover{
+                            -webkit-transform:scale(1.3);transform:scale(1.3);
+                        }
+                    }
+                   
+                    h2{
+                        padding-top: 10px;
+                        font-family: Roboto;
+                        font-size: 1.5rem;
+    
+                    }
+                    p{
+                        margin-left: 8px;
+                        margin-right: 8px;
+                        text-align: justify;
+                    }
+                    button{
+                        border: none;
+                        background: rgb(81, 97, 243);
+                        color: white;
+                        padding: 5px 30px;
+                        margin-bottom: 5px;
+                        transition: 500ms;
+                        &:hover{
+                            background: rgb(68, 81, 141);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

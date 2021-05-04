@@ -687,6 +687,186 @@
   }
 }
 
+.carrusel img {
+  background: url(https://picsum.photos/500/100);
+  background-size: cover;
+}
+
+.servicios {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.servicios .container-serv {
+  padding-top: 50px;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.servicios .container-serv h2 {
+  font-family: roboto;
+  text-transform: uppercase;
+}
+
+.servicios .container-serv .tarjetas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 50px;
+}
+
+.servicios .container-serv .tarjetas .tarjeta {
+  border: 1px solid #8d8d8d;
+  width: 300px;
+  margin-top: 50px;
+}
+
+.servicios .container-serv .tarjetas .tarjeta .images {
+  overflow: hidden;
+}
+
+.servicios .container-serv .tarjetas .tarjeta .images img {
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.servicios .container-serv .tarjetas .tarjeta .images img:hover {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
+.servicios .container-serv .tarjetas .tarjeta h2 {
+  padding-top: 10px;
+  font-family: Roboto;
+  font-size: 1.5rem;
+}
+
+.servicios .container-serv .tarjetas .tarjeta p {
+  margin-left: 8px;
+  margin-right: 8px;
+  text-align: justify;
+}
+
+.servicios .container-serv .tarjetas .tarjeta button {
+  border: none;
+  background: #5161f3;
+  color: white;
+  padding: 5px 30px;
+  margin-bottom: 5px;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+.servicios .container-serv .tarjetas .tarjeta button:hover {
+  background: #44518d;
+}
+
+@media screen and (max-width: 768px) {
+  .servicios {
+    max-width: 1200px;
+    margin: auto;
+  }
+  .servicios .container-serv {
+    padding-top: 50px;
+    text-align: center;
+  }
+  .servicios .container-serv .tarjetas {
+    display: block;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 27%;
+    gap: 50px;
+  }
+  .servicios .container-serv .tarjetas .tarjeta {
+    border: 1px solid #8d8d8d;
+    width: 300px;
+    margin-top: 50px;
+  }
+  .servicios .container-serv .tarjetas .tarjeta .images {
+    overflow: hidden;
+  }
+  .servicios .container-serv .tarjetas .tarjeta .images img {
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  .servicios .container-serv .tarjetas .tarjeta .images img:hover {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+  }
+  .servicios .container-serv .tarjetas .tarjeta h2 {
+    padding-top: 10px;
+    font-family: Roboto;
+    font-size: 1.5rem;
+  }
+  .servicios .container-serv .tarjetas .tarjeta p {
+    margin-left: 8px;
+    margin-right: 8px;
+    text-align: justify;
+  }
+  .servicios .container-serv .tarjetas .tarjeta button {
+    border: none;
+    background: #5161f3;
+    color: white;
+    padding: 5px 30px;
+    margin-bottom: 5px;
+    -webkit-transition: 500ms;
+    transition: 500ms;
+  }
+  .servicios .container-serv .tarjetas .tarjeta button:hover {
+    background: #44518d;
+  }
+}
+
+footer {
+  background: #3a3a3a;
+  height: 200px;
+}
+
+footer .f_inf {
+  max-width: 1200px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: white;
+}
+
+footer .f_inf .info {
+  padding-top: 50px;
+}
+
+footer .f_inf .info .cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .f_inf .info .cont p {
+  font-family: roboto;
+  padding-top: 15px;
+  padding-left: 10px;
+}
+
+footer .f_inf .bar {
+  width: 1px;
+  height: 200px;
+  background: #757575;
+}
+
+footer .f_inf .map p {
+  font-family: roboto;
+  padding-top: 15px;
+  padding-left: 10px;
+  text-align: center;
+}
+
 * {
   padding: 0;
   margin: 0;
