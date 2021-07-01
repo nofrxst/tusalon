@@ -33,6 +33,8 @@
                         
                         <button>Entrar</button>
                     </form>
+
+                    
             
             <!--Formulario de registro-->
                 <form  action="php/registro_usuario_be.php" method="POST" class="register">

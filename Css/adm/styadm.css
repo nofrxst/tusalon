@@ -1,0 +1,340 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: roboto;
+}
+
+:root {
+  --width:300px;
+  --padding: 10px;
+  --bgcolor:rgb(52,52,52);
+  --hovercolor:rgb(23,23,23);
+  --width-collapsed:50px;
+}
+
+body {
+  background-color: #dadada;
+  font-family: arial;
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
+  margin-left: var(--width-collapsed);
+}
+
+.body-expanded {
+  margin-left: var(--width);
+}
+
+#main-container {
+  color: white;
+}
+
+#sidemenu {
+  background-color: var(--bgcolor);
+  color: white;
+  position: fixed;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+#sidemenu a {
+  text-decoration: none;
+  color: white;
+}
+
+#sidemenu #header {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow: hidden;
+  border-bottom: solid 1px var(--hovercolor);
+}
+
+#sidemenu #tittle {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow: hidden;
+}
+
+#sidemenu #tittle, #sidemenu #menu-btn {
+  vertical-align: middle;
+}
+
+#sidemenu #menu-btn {
+  display: inline-block;
+  cursor: pointer;
+  padding: 10px;
+  width: var(--width-collapsed);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: all ease .6s;
+  transition: all ease .6s;
+}
+
+#sidemenu #menu-btn:hover {
+  background-color: var(--hovercolor);
+}
+
+#sidemenu #menu-btn .btn-hamburguer {
+  background-color: #fff;
+  width: 100%;
+  height: 2px;
+  margin: 5px 0;
+}
+
+#sidemenu #profile {
+  border-bottom: solid 1px var(--hovercolor);
+  padding: var(--padding) 0;
+  text-align: center;
+}
+
+#sidemenu #profile #photo {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: var(--padding);
+  margin: 0 auto;
+}
+
+#sidemenu #profile #photo img {
+  border-radius: 50%;
+  width: 60%;
+}
+
+#sidemenu #profile #photo, #sidemenu #profile #name {
+  font-size: 24px;
+  padding: var(--padding) 0;
+  overflow: hidden;
+}
+
+#sidemenu #menu-items {
+  overflow: hidden;
+}
+
+#sidemenu #menu-items .item {
+  width: var(--width);
+}
+
+#sidemenu #menu-items .item .icon {
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: var(--padding);
+  width: var(--width-collapsed);
+}
+
+#sidemenu #menu-items .item .icon img {
+  width: 100%;
+}
+
+#sidemenu #menu-items .item .tittle {
+  padding: var(--padding) 0;
+}
+
+#sidemenu #menu-items .item .icon, #sidemenu #menu-items .item .tittle {
+  font-size: 14px;
+  vertical-align: middle;
+  overflow: hidden;
+  display: inline-block;
+}
+
+#sidemenu #menu-items .item a {
+  display: block;
+  -webkit-transition: all ease 300ms;
+  transition: all ease 300ms;
+}
+
+#sidemenu #menu-items .item a:hover {
+  background-color: var(--hovercolor);
+}
+
+#sidemenu #menu-items .item .separator {
+  height: 1px;
+  border-bottom: solid 1px var(--hovercolor);
+  margin: 15px 0;
+}
+
+.menu-expanded {
+  width: var(--width);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.menu-expanded #header #tittle {
+  display: inline-block;
+  width: calc(100%-50px);
+  margin-right: -5px;
+  padding: var(--padding);
+  margin-right: 112.5px;
+}
+
+.menu-expanded #header #tittle span {
+  width: calc(var(--width)-var(--width-collapsed)-5px);
+  overflow: hidden;
+}
+
+.menu-expanded #profile #photo {
+  width: 200px;
+}
+
+.menu-expanded #profile #name {
+  width: 100%;
+}
+
+.menu-collapsed {
+  width: var(--width-collapsed);
+  -webkit-transition: all ease 300ms;
+  transition: all ease 300ms;
+}
+
+.menu-collapsed #header #tittle {
+  width: 0;
+  height: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-collapsed #profile #name {
+  display: none;
+}
+
+.menu-collapsed #profile .item {
+  width: 100%;
+}
+
+.cnt-m-a {
+  margin-top: 100px;
+}
+
+.cnt-v-a {
+  max-width: 1200px;
+  margin: auto;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cnt-v-a .usuario {
+  background: #3f9fee;
+  height: 50px;
+  width: 100%;
+  margin-bottom: 50px;
+  border-radius: 10px;
+}
+
+.cnt-v-a .usuario .usuario-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 13px 0 0 20px;
+}
+
+.cnt-v-a .usuario .usuario-form p {
+  font-size: 15px;
+  color: white;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.cnt-v-a .usuario .usuario-form input {
+  padding: 5px;
+  border: none;
+}
+
+.cnt-v-a .head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 50px;
+  background: #7cb0ff;
+  padding: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.cnt-v-a .head p {
+  font-family: Roboto;
+  text-transform: uppercase;
+  font-size: 25px;
+  color: white;
+}
+
+.cnt-v-a .datos {
+  background: #b1d9f5;
+  width: 100%;
+}
+
+.cnt-v-a .datos .inv {
+  padding: 10px 0px 10px 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.cnt-v-a .datos .inv button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  left: 40px;
+  top: 8px;
+  border-radius: 50px;
+  padding: 2px;
+}
+
+.cnt-v-a .datos .inv button:hover {
+  background: #05ffb4;
+}
+
+.cnt-v-a .datos input {
+  width: 100px;
+  margin: 5px 38px 5px 0;
+  padding: 2px 0;
+  border: none;
+  outline: none;
+}
+
+.cnt-v-a .datos select {
+  width: 300px;
+  margin-right: 48px;
+  padding: 2px;
+  font-family: roboto;
+  text-transform: uppercase;
+}
+
+.cnt-v-a .btn {
+  width: 100%;
+  padding-top: 20px;
+}
+
+.cnt-v-a .btn .imprimir {
+  background: #f18a5a;
+  font-size: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+  padding: 5px;
+  position: absolute;
+  left: 48%;
+  cursor: pointer;
+}
+
+.cnt-v-a .btn .imprimir p {
+  text-transform: uppercase;
+  padding-left: 5px;
+  color: white;
+}
+/*# sourceMappingURL=styadm.css.map */

@@ -1,0 +1,213 @@
+:root{
+    --width:300px;
+    --padding: 10px;
+    --bgcolor:rgb(52,52,52);
+    --hovercolor:rgb(23,23,23);
+    --width-collapsed:50px;
+}
+
+body{
+    background-color: #dadada;
+    font-family: arial;
+    font-size: 18px;
+    padding: 0;
+    margin:0;
+    margin-left: var(--width-collapsed);
+}
+    .body-expanded{
+        margin-left: var(--width);
+        
+    }
+
+    #main-container{
+        color: white;
+    }
+    #sidemenu{
+        background-color: var(--bgcolor);
+        color: white;
+        position: fixed;
+        height: 100%;
+        left: 0;
+        top: 0;
+
+        a{
+            text-decoration: none;
+            color: white;
+
+
+            
+        }
+//header
+        #header{
+            box-sizing: border-box;
+            overflow: hidden;
+            border-bottom: solid 1px var(--hovercolor);
+            
+        }
+
+
+        #tittle{
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+
+        #tittle, #menu-btn{
+            vertical-align: middle;
+        }
+
+        #menu-btn{
+            display: inline-block;
+            cursor: pointer;
+            padding: 10px;
+            width: var(--width-collapsed);
+            box-sizing: border-box;
+            transition: all ease .6s;
+            &:hover{
+                background-color: var(--hovercolor);
+            }
+        
+            .btn-hamburguer{
+                background-color: #fff;
+                width: 100%;
+                height: 2px;
+                margin: 5px 0;
+            }
+        }
+
+        //Profile
+
+        
+            #profile{
+                border-bottom: solid 1px var(--hovercolor);
+                padding: var(--padding)0;
+                text-align: center;
+            
+                #photo{
+                    box-sizing: border-box;
+                    padding: var(--padding);
+                    margin: 0 auto;
+                
+                    img{
+                        border-radius: 50%;
+                        width: 60%;
+                    }
+                
+                }
+
+                #photo,#name{
+                font-size: 24px;
+                padding: var(--padding)0;
+                overflow: hidden;
+                }
+            
+            }
+
+
+            #menu-items{
+                overflow: hidden;
+
+                .item{
+                    width: var(--width);
+
+
+                    .icon{
+                        display: inline-block;
+                        box-sizing: border-box;
+                        padding: var(--padding);
+                        width: var(--width-collapsed);
+                    
+                        img{
+                            width: 100%;
+                        }
+                    }
+
+                    .tittle{
+                        padding: var(--padding)0;
+                    }
+
+                    .icon,.tittle{
+                        font-size: 14px;
+                        vertical-align: middle;
+                        overflow: hidden;
+                        display: inline-block;
+                    }
+
+                    a{
+                        display: block;
+                        transition: all ease 300ms;
+                        &:hover{
+                            background-color:var(--hovercolor);
+                        }
+                    }
+                    // Para categorizar
+                    .separator{
+                        height: 1px;
+                        border-bottom: solid 1px var(--hovercolor);
+                        margin: 15px 0;
+                    }
+                    
+                }
+            }
+    }
+
+    .menu-expanded{
+        width: var(--width);
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+     //   transition: all ease .2s;
+     #header{
+         
+        #tittle{
+            display: inline-block;
+            width: calc(100%-50px);
+            margin-right: -5px;
+            padding: var(--padding);
+            margin-right: 112.5px;
+           span{
+               width: calc(var(--width)-var(--width-collapsed)-5px);
+               overflow: hidden;
+               
+           }       
+        
+           }
+        }
+
+
+        #profile {
+            #photo{
+                width: 200px;
+    
+            
+            }
+            #name{
+                width: 100%;
+            }
+        }
+        
+        
+    }
+
+    .menu-collapsed{
+        width:var(--width-collapsed);
+        transition: all ease 300ms;
+        #header{
+            #tittle{
+                width: 0;
+                height: 0;
+                padding: 0;
+                margin: 0;
+            }
+        }
+
+        #profile{
+            #name{
+                display: none;
+            }
+    
+            .item{
+                width: 100%;
+            }
+        }
+    }
+   
+    
+
